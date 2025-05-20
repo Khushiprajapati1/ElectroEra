@@ -1,0 +1,45 @@
+:root{
+    --salmon :linear-gradient(90deg, rgba(19,0,36,1) 50%, rgba(180,0,255,1) 100%, rgba(140,10,10,1) 100%);
+    --black : linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,10,140,1) 100%, rgba(0,212,255,1) 100%);
+    --white : white;
+    --cyan : linear-gradient(90deg, rgba(25,0,36,1) 59%, rgba(255,0,159,1) 100%, rgba(140,10,10,1) 100%);
+    --dcyan : white;
+    --dsalmon : rgb(183, 168, 168);
+    --last:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(99,10,140,1) 100%, rgba(0,212,255,1) 100%);
+    --last-color:rgba(255, 255, 255, 0.76);
+}
+
+.body{
+    transition: all ease-out .5s;
+}
+.vdiodiv{
+    clip-path:circle(var(--clip) at 50% 50%)
+}
+
+*::selection{
+    background-color: var(--salmon);
+}
+.body[theme="black"]{
+    background: var(--black);
+}
+.body[theme="black"] .section{
+    color: var(--white);
+}
+.body[theme="cyan"]{
+    background:var(--cyan);
+}
+.body[theme="cyan"] .section{
+    color: var(--dcyan);
+}
+.body[theme="salmon"]{
+    background:var(--salmon);
+}
+.body[theme="salmon"] .section{
+    color: var(--dsalmon)
+}
+.body[theme="last"]{
+    background:var(--last);
+}
+.body[theme="last"] .section{
+    color:var(--last-color);
+}

@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+
+body{background: #f1f1f1;}
+
+.MultiBadge-badge {background: red !important;}
+
+.ReactCollapse--collapse {
+    transition: height 300ms;
+  }
+
+  ::-webkit-scrollbar{width: 10px !important; height: 10px !important;}
+  ::-webkit-scrollbar-thumb{background: #ccc !important;}
+
+  .btn-blue{
+    background:#3872fa !important;
+    color:#fff !important;
+    padding:8px 20px !important;
+  }
+  .btn-blue:hover{
+    background:#3067e5 !important;
+  }
+  .btn{
+    padding:8px 20px !important;
+  }
+  .btn-sm{
+    padding: 6px 20px !important;
+    font-size: 13px !important;
+  }
+  .btn svg{
+    font-size: 18px;
+    margin-right: 4px;
+  }
+ a.active button{
+  background: #e5e3e3 !important;
+ }
+ .MuiAppBar-colorPrimary{background: #dfdfdf !important;}
+
+ input[type="number"]::-webkit-inner-spin-button,
+ input[type="number"]::-webkit-outer-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+ .MultiSelect-select{background: #fff !important;}
+
