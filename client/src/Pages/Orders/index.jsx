@@ -9,8 +9,8 @@ import {
 } from "@mui/material";
 import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa6";
-import Badge from "../../Components/Badge";
-import SearchBox from "../../Components/SearchBox";
+import Badge from "../../components/Badge";
+import SearchBox from "../../components/SearchBox";
 import { useOrder } from "../../store/order-context";
 import { toast } from "react-toastify";
 

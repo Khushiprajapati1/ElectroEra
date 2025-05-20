@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import Checkbox from "@mui/material/Checkbox";
 import { MdOutlineMarkEmailRead } from "react-icons/md";
 import Pagination from "@mui/material/Pagination";
-import SearchBox from "../../Components/SearchBox";
+import SearchBox from "../../components/SearchBox";
 import { MdLocalPhone } from "react-icons/md";
 import { SlCalender } from "react-icons/sl";
 import { useAuth } from "../../store/auth";

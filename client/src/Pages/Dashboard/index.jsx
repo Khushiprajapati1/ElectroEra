@@ -9,13 +9,13 @@ import {
   Legend,
   ResponsiveContainer,
 } from "recharts";
-import DashboardBoxes from "../../Components/DashboardBoxes";
+import DashboardBoxes from "../../components/DashboardBoxes";
 import { FaHandSparkles } from "react-icons/fa";
 import { IoMdAdd } from "react-icons/io";
 import { toast } from "react-toastify";
 import { Button } from "@mui/material";
 import { FaAngleDown } from "react-icons/fa";
-import Badge from "../../Components/Badge";
+import Badge from "../../components/Badge";
 import { FaAngleUp } from "react-icons/fa6";
 import Checkbox from "@mui/material/Checkbox";
 import { IoEyeOutline } from "react-icons/io5";
@@ -26,7 +26,7 @@ import { Menu, InputLabel, FormControl } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import { PiExportBold } from "react-icons/pi";
 import Pagination from "@mui/material/Pagination";
-import ProgressBar from "../../Components/ProgressBar";
+import ProgressBar from "../../components/ProgressBar";
 import { MyContext } from "../../App";
 import { useAuth } from "../../store/auth";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };

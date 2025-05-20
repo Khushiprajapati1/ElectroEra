@@ -5,12 +5,12 @@ import Select from "@mui/material/Select";
 import MenuItem from "@mui/material/MenuItem";
 import { PiExportBold } from "react-icons/pi";
 import Checkbox from "@mui/material/Checkbox";
-import ProgressBar from "../../Components/ProgressBar";
+import ProgressBar from "../../components/ProgressBar";
 import { AiOutlineEdit } from "react-icons/ai";
 import { IoEyeOutline } from "react-icons/io5";
 import { GoTrash } from "react-icons/go";
 import Pagination from "@mui/material/Pagination";
-import SearchBox from "../../Components/SearchBox";
+import SearchBox from "../../components/SearchBox";
 import { MyContext } from "../../App";
 
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
