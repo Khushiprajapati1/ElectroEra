@@ -14,7 +14,7 @@ export const WishlistProvider = ({ children }) => {
     const fetchWishlist = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/wishlist/getWishlist",
+          "https://electroera.onrender.com/api/wishlist/getWishlist",
           {
             method: "POST",
             headers: {
@@ -42,7 +42,7 @@ export const WishlistProvider = ({ children }) => {
   const toggleWishlist = async (productId) => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/wishlist/toggleWishlist",
+        "https://electroera.onrender.com/api/wishlist/toggleWishlist",
         {
           method: "POST",
           headers: {
@@ -78,7 +78,7 @@ export const WishlistProvider = ({ children }) => {
   );
 };
 
-// ✅ Custom hook to use context
+// Custom hook to use context
 export const useWishlist = () => {
   return useContext(WishlistContext);
 };

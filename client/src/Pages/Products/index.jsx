@@ -65,7 +65,7 @@ const Products = () => {
     // console.log("Deleting product with ID:", selectedProductId);
     try {
       const response = await fetch(
-        "http://localhost:5000/api/product/deleteProduct",
+        "https://electroera.onrender.com/api/product/deleteProduct",
         {
           method: "DELETE",
           headers: {
@@ -126,7 +126,7 @@ const Products = () => {
     }
     try {
       const response = await fetch(
-        "http://localhost:5000/api/product/updateProduct",
+        "https://electroera.onrender.com/api/product/updateProduct",
         {
           method: "PUT",
           headers: {

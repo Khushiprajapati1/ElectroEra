@@ -25,7 +25,7 @@ export const AddToCartProvider = ({ children }) => {
     };
 
     try {
-      const response = await fetch(`http://localhost:5000/api/cart/addToCart`, {
+      const response = await fetch(`https://electroera.onrender.com/api/cart/addToCart`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -48,7 +48,7 @@ export const AddToCartProvider = ({ children }) => {
 
   const fetchCart = async (userId) => {
     try {
-      const response = await fetch("http://localhost:5000/api/cart/fetchUser", {
+      const response = await fetch("https://electroera.onrender.com/api/cart/fetchUser", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -73,7 +73,7 @@ export const AddToCartProvider = ({ children }) => {
 
       //console.log(userId,productId)
 
-      const response = await fetch("http://localhost:5000/api/cart/removeItemFromCart", {
+      const response = await fetch("https://electroera.onrender.com/api/cart/removeItemFromCart", {
         method: "DELETE",
         headers: {
           "Content-Type": "application/json",

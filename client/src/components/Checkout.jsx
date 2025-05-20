@@ -46,7 +46,7 @@ const Checkout = () => {
     const fetchAddress = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/address/getAddress",
+          "https://electroera.onrender.com/api/address/getAddress",
           {
             method: "POST",
             headers: {
@@ -81,8 +81,8 @@ const Checkout = () => {
     e.preventDefault();
     try {
       const url = address
-        ? "http://localhost:5000/api/address/updateAddress"
-        : "http://localhost:5000/api/address/addAddress";
+        ? "https://electroera.onrender.com/api/address/updateAddress"
+        : "https://electroera.onrender.com/api/address/addAddress";
 
       const method = address ? "PUT" : "POST";
 
@@ -111,7 +111,7 @@ const Checkout = () => {
     const amountInPaise = getTotalAmount() * 100;
     try {
       const response = await fetch(
-        "http://localhost:5000/api/payment/createOrder",
+        "https://electroera.onrender.com/api/payment/createOrder",
         {
           method: "POST",
           headers: {

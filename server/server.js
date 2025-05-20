@@ -23,7 +23,7 @@ const reviewRouter = require("./router/review-router");
 const _dirname = path.resolve();
 
 const corsOptions = {
-  origin :"http://localhost:5173", 
+  origin :"https://electroera.onrender.com", 
   methods : "GET, POST, PUT, DELETE, PATCH, HEAD",
   credentials : true,
 }

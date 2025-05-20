@@ -5,7 +5,7 @@ import { useAuth } from "../store/auth";
 import { toast } from "react-toastify";
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
 
-const URL = "http://localhost:5000/api/auth/login";
+const URL = "https://electroera.onrender.com/api/auth/login";
 
 const LoginForm = () => {
   //const [isEmail, setIsEmail] = useState(true); // state to determine input type

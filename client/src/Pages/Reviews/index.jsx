@@ -26,7 +26,7 @@ const Reviews = () => {
   const getAllReviews = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/review/getAllReviews",
+        "https://electroera.onrender.com/api/review/getAllReviews",
         {
           method: "GET",
         }
@@ -59,7 +59,7 @@ const handleConfirmDelete = async () => {
     //console.log("Deleting product with ID:", selectedProductId);
     try {
       const response = await fetch(
-        "http://localhost:5000/api/review/deleteReview",
+        "https://electroera.onrender.com/api/review/deleteReview",
         {
           method: "DELETE",
           headers: {

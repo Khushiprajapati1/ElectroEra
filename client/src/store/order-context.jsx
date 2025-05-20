@@ -9,7 +9,7 @@ export const useOrder = () => {
 };
 
 export const OrderProvider = ({ children }) => {
-  const BASE_URL = "http://localhost:5000/api/order";
+  const BASE_URL = "https://electroera.onrender.com/api/order";
 
   const placeOrder = async (orderData) => {
     try {

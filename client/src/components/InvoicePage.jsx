@@ -37,7 +37,7 @@ const InvoicePage = () => {
     try {
       for (const productId of productIds) {
         const response = await fetch(
-          "http://localhost:5000/api/review/createReview",
+          "https://electroera.onrender.com/api/review/createReview",
           {
             method: "POST",
             headers: {

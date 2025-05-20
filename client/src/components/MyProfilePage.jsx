@@ -37,7 +37,7 @@ const MyProfilePage = () => {
       const fetchAddress = async () => {
         try {
           const response = await fetch(
-            "http://localhost:5000/api/address/getAddress",
+            "https://electroera.onrender.com/api/address/getAddress",
             {
               method: "POST",
               headers: {
@@ -157,8 +157,8 @@ const MyProfilePage = () => {
     }
     try {
       const url = address
-        ? "http://localhost:5000/api/address/updateAddress"
-        : "http://localhost:5000/api/address/addAddress";
+        ? "https://electroera.onrender.com/api/address/updateAddress"
+        : "https://electroera.onrender.com/api/address/addAddress";
 
       const method = address ? "PUT" : "POST";
       const response = await fetch(url, {

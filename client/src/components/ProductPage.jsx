@@ -41,7 +41,7 @@ function App() {
     window.scrollTo(0, 0);
     const fetchReviews = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/review/getReviewByProduct`,{
+        const response = await fetch(`https://electroera.onrender.com/api/review/getReviewByProduct`,{
           method: "POST",
           headers: {
             "Content-Type": "application/json",

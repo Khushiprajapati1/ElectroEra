@@ -27,7 +27,7 @@ const Users = () => {
 
   const getAllUsersData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/admin/users", {
+      const response = await fetch("https://electroera.onrender.com/api/admin/users", {
         method: "GET",
         headers: {
           Authorization: authorizationToken,
@@ -67,7 +67,7 @@ const Users = () => {
     //console.log("Deleting product with ID:", selectedProductId);
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/makeUserAdmin",
+        "https://electroera.onrender.com/api/admin/makeUserAdmin",
         {
           method: "POST",
           headers: {

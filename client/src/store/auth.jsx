@@ -13,7 +13,7 @@ export const AuthProvider = ({ children }) => {
   const getProducts = async () => {
     try {
       const response = await fetch(
-        "http://localhost:5000/api/product/products",
+        "https://electroera.onrender.com/api/product/products",
         {
           method: "GET",
         }
@@ -57,7 +57,7 @@ export const AuthProvider = ({ children }) => {
 
       setIsLoading(true);
 
-      const response = await fetch("http://localhost:5000/api/auth/user",
+      const response = await fetch("https://electroera.onrender.com/api/auth/user",
         {
           method:"GET",
           headers:{
