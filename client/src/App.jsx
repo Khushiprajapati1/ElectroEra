@@ -59,7 +59,7 @@ import MainLayout from "./components/MainLayout";
 
 // Admin Panel
 import Dashboard from "./Pages/Dashboard";
-import Header from "./Components/Header";
+import Header from "./components/Header";
 // import Sidebar from "./Components/Sidebar";
 import Login from "./Pages/Login";
 import SignUpForm from "./Pages/SignUp";
