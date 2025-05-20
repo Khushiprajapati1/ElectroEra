@@ -1,7 +1,7 @@
 // src/components/layouts/DashboardLayout.jsx
 import React from "react";
-import Header from "../Components/Header";
-import Sidebar from "../Components/Sidebar";
+import Header from "../components/Header";
+import Sidebar from "../components/Sidebar";
 //for current loggedin user
 import { useAuth } from "../store/auth"; 
 import { Navigate } from "react-router-dom";
