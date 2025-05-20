@@ -2,7 +2,6 @@ require("dotenv").config();
 
 const express = require("express");
 const session = require("express-session");
-const MongoStore = require("connect-mongo");
 const cors = require("cors");
 const path = require("path");
 const app = express();
@@ -24,10 +23,10 @@ const reviewRouter = require("./router/review-router");
 const _dirname = path.resolve();
 
 const corsOptions = {
-  origin: "http://localhost:5173",
-  methods: "GET, POST, PUT, DELETE, PATCH, HEAD",
-  credentials: true,
-};
+  origin :"http://localhost:5173", 
+  methods : "GET, POST, PUT, DELETE, PATCH, HEAD",
+  credentials : true,
+}
 app.use(cors(corsOptions));
 
 //to get data in json
@@ -35,14 +34,9 @@ app.use(express.json());
 
 app.use(
   session({
-    secret: process.env.SESSION_SECRET_KEY,
+    secret: process.env.SESSION_SECRET_KEY, 
     resave: false,
     saveUninitialized: true,
-    store: MongoStore.create({
-      mongoUrl: process.env.MONGODB_URI, // e.g., from your .env file
-      collectionName: "sessions",
-      ttl: 60 * 10, // 10 minutes session TTL in seconds
-    }),
     cookie: { secure: false, maxAge: 600000 }, // Cookie expires in 10 mins
   })
 );
@@ -51,31 +45,31 @@ app.use(
 app.use("/api/auth", router);
 
 //for product-router
-app.use("/api/product", productRouter);
+app.use("/api/product",productRouter)
 
-app.use("/api/cart", cartRouter);
+app.use("/api/cart",cartRouter)
 
-app.use("/api/wishlist", wishlistRouter);
+app.use("/api/wishlist",wishlistRouter)
 
-app.use("/api/admin", adminRouter);
+app.use("/api/admin",adminRouter)
 
-app.use("/api/address", addressRouter);
+app.use("/api/address",addressRouter)
 
-app.use("/api/order", orderRouter);
+app.use("/api/order",orderRouter)
 
-app.use("/api/payment", paymentRouter);
+app.use("/api/payment",paymentRouter)
 
-app.use("/api/review", reviewRouter);
+app.use("/api/review",reviewRouter)
 
 //for error-handling
 app.use(errorMiddleware);
 
 //server listening to the port
 
-app.use(express.static(path.join(_dirname, "/client/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(_dirname, "client", "dist", "index.html"));
-});
+app.use(express.static(path.join(_dirname, "/client/dist")))
+app.get('*', (req,res)=>{
+  res.sendFile(path.resolve(_dirname,"client","dist","index.html"));
+})
 
 const port = 5000;
 connectDb().then(() => {
