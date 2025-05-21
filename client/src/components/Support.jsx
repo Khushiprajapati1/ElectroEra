@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaPhoneAlt, FaEnvelope, FaTools } from "react-icons/fa";
 import { IoMdFlower } from "react-icons/io";
 
 function Support() {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div className="bg-gradient-to-b from-gray-200 to-gray-300 min-h-screen py-10 px-4">
       <div className="max-w-4xl mx-auto">

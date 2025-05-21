@@ -56,6 +56,7 @@ import OtpPage from "./components/OtpPage";
 import { LogOut } from "./components/LogOut";
 //import Footer from "./components/footer";
 import MainLayout from "./components/MainLayout";
+import useIsMobile from "./store/useMobile";
 
 // Admin Panel
 import Dashboard from "./Pages/Dashboard";
@@ -98,7 +99,9 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 const MyContext = createContext();
 
+
 function App() {
+  const isMobile = useIsMobile();
   const [isLogin, setIsLogin] = useState(false);
   const [isOpenFullScreenPanel, setIsOpenFullScreenPanel] = useState({
     open: false,
@@ -122,7 +125,7 @@ function App() {
 
       <Routes>
         <Route element={<MainLayout />}>
-        <Route path="/" element={<HomePage />} />
+         <Route path="/" element={isMobile ? <ACproducts /> : <HomePage />} />
         <Route path="/AC" element={<ACproducts />} />
         <Route path="/Haier_AC" element={<HaierAC />} />
         <Route path="/LG_AC" element={<LgAC />} />

@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkedAlt, FaMapMarkerAlt, FaClock } from "react-icons/fa";
 import { FcBusinessContact } from "react-icons/fc";
 import { motion } from "framer-motion"; // Import motion from framer-motion
 
 function ContactUs() {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [showMap, setShowMap] = useState(false);
 
   const sectionVariants = {
@@ -17,6 +20,7 @@ function ContactUs() {
   };
 
   return (
+    
     <div className="bg-gray-800 min-h-screen px-4 py-12">
       <div className="max-w-4xl mx-auto">
         <motion.h1

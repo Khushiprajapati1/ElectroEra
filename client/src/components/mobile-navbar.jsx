@@ -81,7 +81,7 @@ export default function MobileNavbar() {
                 <h2 className="mb-3 text-xl font-bold">Shop the Latest</h2>
                 <ul className="space-y-2">
                   <li>
-                    <Link to="/AC" className="text-white/90 hover:text-white">
+                    <Link to="/AC" className="text-white/90 hover:text-white" >
                       AC
                     </Link>
                   </li>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
@@ -111,6 +111,10 @@ const faqVariants = {
 };
 
 const FAQs = () => {
+
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleFAQ = (index) => {
